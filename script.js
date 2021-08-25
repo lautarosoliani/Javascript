@@ -11,3 +11,19 @@ if (num1 > num2) {
 
 // --> ESTRUCTURA DE UN IF
 // if (aca va la condicion) {aca va la consecuencia si la condicion es true}
+// el orden es IF - ELSE IF - ELSE
+
+let decibelesPersona1 = 10
+let decibelesPersona2 = 20
+let decibelesPersona3 = 30
+
+const sumaDecibelesPersonas =
+    decibelesPersona1 + decibelesPersona2 + decibelesPersona3
+
+if (sumaDecibelesPersonas > 99) {
+    console.log(`Las personas estan gritando`)
+} else if (sumaDecibelesPersonas <= 99 && sumaDecibelesPersonas > 49) {
+    console.log(`Las personas estan cumpliendo con los decibeles permitidos`)
+} else {
+    console.log(`Las personas estan susurrando`)
+}

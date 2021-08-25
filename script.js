@@ -46,3 +46,10 @@ function saludo() {
 let elRetornoNoDelReySinoDeLaFunctionSaludo = saludo()
 
 // la nueva variable creada es igual al retorno de la funcion
+// otro ejemplo debajo
+
+function trueFunction() {
+    return true
+}
+
+let siMeLlamasTeRetornoTrue = trueFunction()

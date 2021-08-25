@@ -113,3 +113,57 @@
 // console.log(mayorQue(100, 100))
 
 ///////////////////////////////////////MEETING 21/////////////////////////////////////
+
+let tareas = [
+    "Terminar de leer la bitácora 21",
+    "Hacer el challenge",
+    "Empezar a ver The OA en Netflix",
+    "Aprender sobre arrays",
+]
+
+for (let x = 0; x < tareas.length; x++) {
+    //     console.log(tareas[x])
+}
+
+// for (let x = 10; x >= 1; x--) {
+//     console.log(x)
+// }
+
+function repetir(n, mensaje) {
+    for (let x = 0; x <= n; x++) {
+        // console.log(`${x} ${mensaje}`)
+    }
+}
+repetir(10, "veces repetidas papu, ahi tenes")
+
+/////////////////////////////////////CRUD DE ARRAY////////////////////////////////////
+
+// PARA CREARLO
+const tareasEjemplo = [0, 1, 2, 3]
+
+// PARA LEER, LO CONSOL.LOGGEO
+// console.log(tareasEjemplo)
+// sino mando un indexOf buscando algo en particular,
+// si devuelve -1 no existe en el array
+// si existe devuelve el index
+// console.log(tareasEjemplo.indexOf("este va al principo del array"))
+
+// PARA UPDATE
+// tareasEjemplo.push("este va al final del array")
+// console.log(tareasEjemplo)
+
+// tareasEjemplo.unshift("este va al principo del array")
+// console.log(tareasEjemplo)
+// console.log(tareasEjemplo.indexOf("este va al final del array"))
+
+//PARA DELETE
+//.splice (donde empieza, cuantos elimina, agregar1, agregar2, agregarX)
+// tareasEjemplo.splice(0, 4, 10, 11, "NN")
+// console.log(tareasEjemplo)
+
+function quieroAgregarEsteNumeroAlArray(x) {
+    tareasEjemplo.push(x)
+}
+
+quieroAgregarEsteNumeroAlArray(6_000_000)
+console.log(tareasEjemplo)

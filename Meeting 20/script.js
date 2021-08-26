@@ -10,6 +10,7 @@
 //         console.log(`Es menor de edad`)
 //     }
 // }
+// console.log(verificarEdad())
 
 // function saludo() {
 //     return "hola"

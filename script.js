@@ -394,24 +394,25 @@
 // let burguerRetornada = burguer(0, 1, 1, `Veggie Burguer With Tomato`)
 // console.log(burguerRetornada)
 
-function pizza(AAnombre, salsa, queso, aceitunas, morrones) {
-    let zzaptoIntolerantesAlaLactosa
-    if (queso === false) {
-        zzaptoIntolerantesAlaLactosa = true
-    } else {
-        zzaptoIntolerantesAlaLactosa = false
-    }
-    return {
-        AAnombre,
-        salsa,
-        queso,
-        aceitunas,
-        morrones,
-        zzaptoIntolerantesAlaLactosa,
-    }
-}
-let tuPizzaPapu = pizza(`muzzarella`, false, true, true, true)
-console.log(tuPizzaPapu)
+// function pizza(AAnombre, salsa, queso, aceitunas, morrones) {
+//     let zzaptoIntolerantesAlaLactosa
+//     if (queso === false) {
+//         zzaptoIntolerantesAlaLactosa = true
+//     } else {
+//         zzaptoIntolerantesAlaLactosa = false
+//     }
+//     return {
+//         AAnombre,
+//         salsa,
+//         queso,
+//         aceitunas,
+//         morrones,
+//         zzaptoIntolerantesAlaLactosa,
+//     }
+// }
+// let tuPizzaPapu = pizza(`muzzarella`, false, true, true, true)
+
+// console.log(tuPizzaPapu)
 
 // function functionToOrderBurguer(nombre, pan, carne, tomate, vegetariana) {
 //     const objectBurguer = {

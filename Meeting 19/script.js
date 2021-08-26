@@ -414,27 +414,27 @@
 
 // console.log(tuPizzaPapu)
 
-// function functionToOrderBurguer(nombre, pan, carne, tomate, vegetariana) {
-//     const objectBurguer = {
-//         nombre: nombre,
-//         pan: pan,
-//         carne: carne,
-//         tomate: tomate,
-//         vegetariana: vegetariana,
-//     }
-//     return objectBurguer
-// }
+function functionToOrderBurguer(nombre, pan, carne, tomate, vegetariana) {
+    const objectBurguer = {
+        nombre: nombre,
+        pan: pan,
+        carne: carne,
+        tomate: tomate,
+        vegetariana: vegetariana,
+    }
+    return objectBurguer
+}
 
-// let burguerOrdenada = functionToOrderBurguer(
-//     "veggie with tomate",
-//     "casero",
-//     0,
-//     1
-// )
+let burguerOrdenada = functionToOrderBurguer(
+    "veggie with tomate",
+    "casero",
+    0,
+    1
+)
 
-// burguerOrdenada.pan = "negro"
-// burguerOrdenada["vegetariana"] = true
-// delete burguerOrdenada.tomate
-// burguerOrdenada.nombre = `veggie without tomate`
+burguerOrdenada.pan = "negro"
+burguerOrdenada["vegetariana"] = true
+delete burguerOrdenada.tomate
+burguerOrdenada.nombre = `veggie without tomate`
 
-// console.log(burguerOrdenada)
+console.log(burguerOrdenada)

@@ -61,6 +61,7 @@
 //         }
 //     },
 // }
+// console.log(producto.disponible())
 
 // console.log(producto.disponible())
 // 2. Invoca la función aquí
@@ -137,3 +138,10 @@
 // burguerOrdenada.nombre = `veggie without tomate`
 
 // console.log(burguerOrdenada)
+
+// 3. Declara un array de objetos. Diseña cada objeto considerando que cada uno
+// debe representar una tarea dentro del Taskineitor.
+// Tienes la libertad de crear las propiedades que consideres,
+// como título o nombre de la tarea, el estado en el que se encuentra,
+// (completada/no completada), entre otras.
+// Trae tu array de tareas para la próxima clase.

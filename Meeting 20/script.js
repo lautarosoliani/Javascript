@@ -15,8 +15,13 @@
 // function saludo() {
 //     return "hola"
 // }
-
 // let elRetornoNoDelReySinoDeLaFunctionSaludo = saludo()
+
+// function funcionDeLaCualQuieroCaptarElReturn() {
+//     return `soy el return en forma de string!`
+// }
+// let retornoCapturadoRey = funcionDeLaCualQuieroCaptarElReturn()
+// console.log(retornoCapturadoRey)
 
 // // la nueva variable creada es igual al retorno de la funcion
 // // otro ejemplo debajo

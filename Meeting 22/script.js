@@ -217,4 +217,20 @@ const arrayTareas = [
     { id: 3, tarea: `Ir al supermercado`, estado: false, urgencia: null },
 ]
 
-function eliminarTarea() {}
+function eliminarTarea(tareaEliminada) {
+    let idParaEliminar = tareaEliminada.id
+    for (let i = 0; i < arrayTareas.length; i++) {
+        if (arrayTareas[i].id === idParaEliminar) {
+            let posicion = arrayTareas.indexOf(arrayTareas[i])
+            arrayTareas.splice(posicion, 1)
+        }
+    }
+}
+
+let tareaEliminada = {
+    id: 3,
+}
+
+eliminarTarea(tareaEliminada)
+
+console.log(arrayTareas)

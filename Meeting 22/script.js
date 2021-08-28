@@ -201,17 +201,20 @@
 // agregarTarea(tareaParaAgregar)
 // console.log(arrayTareas)
 
+// function funModificarTarea(objTareaModificada) {
+//     let idAModificar = objTareaModificada.id
+//     for (let i = 0; i < arrayTareas.length; i++) {
+//         if (arrayTareas[i].id === idAModificar) {
+//             arrayTareas[i] = objTareaModificada
+//         }
+//     }
+// }
+
+/////////////////////////////////////////ELIMINAR TAREA/////////////////////////////////////
 const arrayTareas = [
     { id: 1, tarea: `Hacer el Challenge`, estado: false, urgencia: null },
     { id: 2, tarea: `Lavar ropa`, estado: false, urgencia: null },
     { id: 3, tarea: `Ir al supermercado`, estado: false, urgencia: null },
 ]
 
-function funModificarTarea(objTareaModificada) {
-    let idAModificar = objTareaModificada.id
-    for (let i = 0; i < arrayTareas.length; i++) {
-        if (arrayTareas[i].id === idAModificar) {
-            arrayTareas[i] = objTareaModificada
-        }
-    }
-}
+function eliminarTarea() {}

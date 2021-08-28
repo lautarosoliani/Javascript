@@ -145,3 +145,12 @@
 // como título o nombre de la tarea, el estado en el que se encuentra,
 // (completada/no completada), entre otras.
 // Trae tu array de tareas para la próxima clase.
+
+function functionTareasTaskinator() {
+    return [
+        { tarea: `Hacer el Challenge`, estado: false, urgencia: null },
+        { tarea: `Lavar ropa`, estado: false, urgencia: null },
+        { tarea: `Ir al supermercado`, estado: false, urgencia: null },
+    ]
+}
+console.log(functionTareasTaskinator())

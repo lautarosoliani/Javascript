@@ -146,11 +146,72 @@
 // (completada/no completada), entre otras.
 // Trae tu array de tareas para la próxima clase.
 
-function functionTareasTaskinator() {
-    return [
-        { tarea: `Hacer el Challenge`, estado: false, urgencia: null },
-        { tarea: `Lavar ropa`, estado: false, urgencia: null },
-        { tarea: `Ir al supermercado`, estado: false, urgencia: null },
-    ]
+// function functionTareasTaskinator() {
+//     return
+// }
+// console.log(arrayTareas[0][`tarea`])
+// console.log(arrayTareas[1][`tarea`])
+// console.log(arrayTareas[2][`tarea`])
+
+// function mostrarInfoDeTarea(id) {
+//     for (let i = 0; i < arrayTareas.length; i++) {
+//         const tareaObtenida = arrayTareas[i]
+//         if (tareaObtenida.id === id) {
+//             console.log(tareaObtenida)
+//         }
+//     }
+// }
+// mostrarInfoDeTarea(2)
+
+// function mostrarInfoDeTarea(id) {
+//     for (let i = 0; i < arrayTareas.length; i++) {
+//         let tareaObtenida = arrayTareas[i]
+//         if (tareaObtenida.id === id) {
+//             console.log(tareaObtenida)
+//         }
+//     }
+// }
+
+//////////////////////////////////////////MOSTRAR TAREA//////////////////////////////////////
+// mostrarInfoDeTarea(0)
+// function mostrarInfoDeTarea(id) {
+//     for (let i = 0; i < arrayTareas.length; i++) {
+//         let objetoTareaObtenida = arrayTareas[i]
+//         if (objetoTareaObtenida.id === id) {
+//             console.log(objetoTareaObtenida)
+//         }
+//     }
+// }
+// mostrarInfoDeTarea(1)
+// mostrarInfoDeTarea(2)
+// mostrarInfoDeTarea(3)
+
+/////////////////////////////////////////AGREGAR TAREA/////////////////////////////////////
+// function agregarTarea(nuevaTarea) {
+//     let idUltimaTarea = arrayTareas[arrayTareas.length - 1].id
+//     nuevaTarea.id = idUltimaTarea + 1
+//     arrayTareas.push(nuevaTarea)
+// }
+// let tareaParaAgregar = {
+//     id: 4,
+//     tarea: `Nueva tarea`,
+//     estado: false,
+//     urgencia: null,
+// }
+// agregarTarea(tareaParaAgregar)
+// console.log(arrayTareas)
+
+const arrayTareas = [
+    { id: 1, tarea: `Hacer el Challenge`, estado: false, urgencia: null },
+    { id: 2, tarea: `Lavar ropa`, estado: false, urgencia: null },
+    { id: 3, tarea: `Ir al supermercado`, estado: false, urgencia: null },
+]
+
+function funModificarTarea(objTareaModificada) {
+    let idAModificar = objTareaModificada.id
+    for (let i = 0; i < arrayTareas.length; i++) {
+        if (arrayTareas[i].id === idAModificar) {
+            arrayTareas[i] = objTareaModificada
+        }
+    }
 }
-console.log(functionTareasTaskinator())

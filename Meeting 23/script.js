@@ -159,10 +159,10 @@
 //////////////////////////////// .find /////////////////////////////////////////////////
 // Devuelve el valor del primer elemento que cumpla con la condicion ///////////////////
 
-let array = [5, 12, 6, 7, 8, 11]
+// let array = [5, 12, 6, 7, 8, 11]
 
-let numeroMayorQueDiez = array.find(function (x) {
-    return x > 10
-})
+// let numeroMayorQueDiez = array.find(function (x) {
+//     return x > 10
+// })
 
-console.log(numeroMayorQueDiez)
+// console.log(numeroMayorQueDiez)

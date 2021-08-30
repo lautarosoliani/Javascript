@@ -115,14 +115,15 @@
 // console.log(rango(0, 10))
 // console.log(sumar(rango(1, 6)))
 
-function saludar(xxx) {
-    return `Hola, bienvenido ${xxx}`
+function saludar(nombre) {
+    return `Hola, bienvenido ${nombre}`
+}
+// console.log(saludar(`Lautaro`))
+
+function gritando(mensaje) {
+    return `${mensaje.toUpperCase()}!`
 }
 
 console.log(saludar(`Lautaro`))
-
-function gritando(yyy) {
-    return `${yyy.toUpperCase()}!!!!`
-}
-
-console.log(saludar(gritando(`Horacio`)))
+console.log(saludar(gritando(`Lautaro`)))
+console.log(gritando(saludar(`Lautaro`)))

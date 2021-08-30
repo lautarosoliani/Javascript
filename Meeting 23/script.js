@@ -88,23 +88,41 @@
 // Y funciones de orden superior, a las que les podemos pasar funciones de parametro,
 // o tambien que lo que nos retorna sea una funcion.
 
-function sumar(array) {
-    let acumulado = 0
-    for (let i = 0; i < array.length; i++) {
-        acumulado = acumulado + array[i]
-    }
+// function sumar(array) {
+//     let acumulado = 0
 
-    return acumulado
-}
+//     for (let i = 0; i < array.length; i++) {
+//         acumulado = acumulado + array[i]
+//     }
 
-console.log(sumar([1, 2, 3]))
+//     return acumulado
+// }
+
+// console.log(sumar([1, 2, 3]))
+
 /////////////////////////////////////////////////////
-function rango(inicio, final) {
-    let = lista = []
 
-    for (let i = inicio; i < final; i++) {
-        lista.push(i)
-    }
+// function rango(inicio, final) {
+//     let lista = []
 
-    return lista
+//     for (let i = inicio; i <= final; i++) {
+//         lista.push(i)
+//     }
+
+//     return lista
+// }
+
+// console.log(rango(0, 10))
+// console.log(sumar(rango(1, 6)))
+
+function saludar(xxx) {
+    return `Hola, bienvenido ${xxx}`
 }
+
+console.log(saludar(`Lautaro`))
+
+function gritando(yyy) {
+    return `${yyy.toUpperCase()}!!!!`
+}
+
+console.log(saludar(gritando(`Horacio`)))

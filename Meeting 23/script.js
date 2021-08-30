@@ -3,55 +3,55 @@
 ///////////////////////////MEETING 23///////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
-let arrayPersonas = [
-    {
-        nombre: "Jhony",
-        asistente: null,
-        seccion: "gold",
-        rol: "speaker",
-    },
-    {
-        nombre: "Manuel",
-        asistente: true,
-        seccion: "vip",
-        rol: "viewer",
-    },
-    {
-        nombre: "Fran",
-        asistente: true,
-        seccion: "vip",
-        rol: "viewer",
-    },
-    {
-        nombre: "Cintia",
-        asistente: true,
-        seccion: "platino",
-        rol: "viewer",
-    },
-    {
-        nombre: "Marcos",
-        asistente: null,
-        seccion: "gold",
-        rol: "viewer",
-    },
-    {
-        nombre: "Victoria",
-        asistente: true,
-        seccion: "platino",
-        rol: "speaker",
-    },
-]
+// let arrayPersonas = [
+//     {
+//         nombre: "Jhony",
+//         asistente: null,
+//         seccion: "gold",
+//         rol: "speaker",
+//     },
+//     {
+//         nombre: "Manuel",
+//         asistente: true,
+//         seccion: "vip",
+//         rol: "viewer",
+//     },
+//     {
+//         nombre: "Fran",
+//         asistente: true,
+//         seccion: "vip",
+//         rol: "viewer",
+//     },
+//     {
+//         nombre: "Cintia",
+//         asistente: true,
+//         seccion: "platino",
+//         rol: "viewer",
+//     },
+//     {
+//         nombre: "Marcos",
+//         asistente: null,
+//         seccion: "gold",
+//         rol: "viewer",
+//     },
+//     {
+//         nombre: "Victoria",
+//         asistente: true,
+//         seccion: "platino",
+//         rol: "speaker",
+//     },
+// ]
 
-function asistentes(listaObtenida) {
-    for (let i = 0; i < arrayPersonas.length; i++) {
-        let listaObtenida = arrayPersonas[i]
-        if (listaObtenida.asistente === true) {
-            console.log("test")
-        }
-    }
-}
+// function asistentes(listaObtenida) {
+//     for (let i = 0; i < arrayPersonas.length; i++) {
+//         let listaObtenida = arrayPersonas[i]
+//         if (listaObtenida.asistente === true) {
+//             console.log("test")
+//         }
+//     }
+// }
 
-asistentes(listaObtenida)
+// asistentes(listaObtenida)
 
 /**
  * Esta fución debe calcular el total de asistentes
@@ -82,3 +82,29 @@ asistentes(listaObtenida)
 //  Lo anterior deberá retornar un nuevo array solo con los objetos
 //  donde la propiedad “rol” sea igual a “speaker.
 //  Encuentra unos tipos en [este sandbox](https://codesandbox.io/s/filtro-cqvzx).
+
+// Vamos a ver 4 maneras nuevas de recorrer un array que no sea con 'for'.
+// Son map, filter, for each y una mas.
+// Y funciones de orden superior, a las que les podemos pasar funciones de parametro,
+// o tambien que lo que nos retorna sea una funcion.
+
+function sumar(array) {
+    let acumulado = 0
+    for (let i = 0; i < array.length; i++) {
+        acumulado = acumulado + array[i]
+    }
+
+    return acumulado
+}
+
+console.log(sumar([1, 2, 3]))
+/////////////////////////////////////////////////////
+function rango(inicio, final) {
+    let = lista = []
+
+    for (let i = inicio; i < final; i++) {
+        lista.push(i)
+    }
+
+    return lista
+}

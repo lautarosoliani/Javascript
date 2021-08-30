@@ -204,7 +204,6 @@ console.log(nuevoArray2)
 let nuevoArray3 = arrayPersonas.filter(function (x) {
     return x.nacio >= 1800 && x.murio <= 2000
 })
-
 console.log(nuevoArray3)
 
 // Utiliza .map para crear un nuevo array de objetos con el apellido
@@ -216,10 +215,28 @@ const nuevoArray4 = arrayPersonas.map(function (x) {
 console.log(nuevoArray4)
 
 // Utiliza .filter para crear un nuevo array de objetos con las personas
-// cuyo nombre sea mayor a 4 letras
+// cuyo nombre sea mayor a 6 letras
+
+const nuevoArray5 = arrayPersonas.filter(function (x) {
+    return x.first.length > 6
+})
+console.log(nuevoArray5)
 
 // Utiliza .filter para crear un nuevo array de objetos con las personas
-// que hayan nacido después de 1800
+// que hayan nacido después de 1850
+
+const nuevoArray6 = arrayPersonas.filter(function (x) {
+    return x.nacio >= 1850
+})
+console.log(nuevoArray6)
 
 // Utiliza .filter  para para crear un nuevo array de objetos con las personas
 // que hayan tenido una edad par (edad % 2 === 0, busca en google el operador "modulo")
+
+const nuevoArray7 = arrayPersonas.filter(function (x) {
+    let edad = x.murio - x.nacio
+
+    return edad % 2 === 0
+})
+
+console.log(nuevoArray7)

@@ -240,3 +240,25 @@ const nuevoArray7 = arrayPersonas.filter(function (x) {
 })
 
 console.log(nuevoArray7)
+
+// utiliza .forEach para mostrar por consola el primer nombre de cada persona
+
+arrayPersonas.forEach(function (x) {
+    console.log(x.first)
+})
+
+// utiliza .find para encontrar por apellido
+
+const nuevoArray8 = arrayPersonas.find(function (x) {
+    return x.last === `Curie`
+})
+console.log(nuevoArray8)
+
+// EJEMPLO DE BUSCADOR PARA PROYECTO DE HOTELES
+
+function buscador(array, palabraParaBuscar) {
+    return array.find(function (x) {
+        return x.last === palabraParaBuscar
+    })
+}
+console.log(buscador(arrayPersonas, `Curie`))

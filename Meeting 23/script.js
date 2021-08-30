@@ -139,10 +139,30 @@
 //////////////////////////////// .map /////////////////////////////////////////////////
 /// Itera sobre un Array y permite aplicar una transformacion sobre cada uno //////////
 
-const array = [0, 1, 2, 3, 4]
+// const array = [0, 1, 2, 3, 4]
+// const arrayAlCuadrado = array.map(function (X) {
+//     return X * X
+// })
+// console.log(arrayAlCuadrado)
 
-const arrayAlCuadrado = array.map(function (X) {
-    return X * X
+//////////////////////////////// .filter /////////////////////////////////////////////////
+// Crea un nuevo array con los elementos que pasen cierta condicion //////////////////////
+// En este caso la condicion es que su tamano (.length) sea al menos de 3/////////////////
+
+// const array = [`ej0`, `ej1`, `ej2`]
+
+// const resultadoDelFilter = array.filter(function (x) {
+//     return x.length <= 3
+// })
+// console.log(resultadoDelFilter)
+
+//////////////////////////////// .find /////////////////////////////////////////////////
+// Devuelve el valor del primer elemento que cumpla con la condicion ///////////////////
+
+let array = [5, 12, 6, 7, 8, 11]
+
+let numeroMayorQueDiez = array.find(function (x) {
+    return x > 10
 })
 
-console.log(arrayAlCuadrado)
+console.log(numeroMayorQueDiez)

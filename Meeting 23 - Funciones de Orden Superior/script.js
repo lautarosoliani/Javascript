@@ -167,7 +167,7 @@
 
 //////////////////////////////// EJERCICIO /////////////////////////////////////////////////
 
-const personas = [
+const arrayPersonas = [
     { first: "Albert", last: "Einstein", nacio: 1879, murio: 1955 },
     { first: "Isaac", last: "Newton", nacio: 1643, murio: 1727 },
     { first: "Galileo", last: "Galilei", nacio: 1564, murio: 1642 },
@@ -185,14 +185,35 @@ const personas = [
 // Utiliza .map para crear un nuevo array de objetos,
 // donde cada objeto tenga solo el nombre y apellido de cada persona
 
+let nuevoArray = arrayPersonas.map(function (x) {
+    return { Nombre: x.first, Apellido: x.last }
+})
+console.log(nuevoArray)
+
 // Utiliza .map para crear un nuevo array de objetos,
 // donde cada objeto tenga solo el nombre y la fecha de nacimiento de cada persona
 
+let nuevoArray2 = arrayPersonas.map(function (x) {
+    return { Nombre: x.first, FechaDeNacimiento: x.nacio }
+})
+console.log(nuevoArray2)
+
 // Utiliza .filter para crear un nuevo array de objetos
-// donde cada objeto represente la persona que haya nacido durante el 1800
+// donde cada objeto represente la persona que haya nacido durante el 1800 y 2000
+
+let nuevoArray3 = arrayPersonas.filter(function (x) {
+    return x.nacio >= 1800 && x.murio <= 2000
+})
+
+console.log(nuevoArray3)
 
 // Utiliza .map para crear un nuevo array de objetos con el apellido
 // de cada persona y su edad (murio - nacio)
+
+const nuevoArray4 = arrayPersonas.map(function (x) {
+    return { Apellido: x.last, Edad: x.murio - x.nacio }
+})
+console.log(nuevoArray4)
 
 // Utiliza .filter para crear un nuevo array de objetos con las personas
 // cuyo nombre sea mayor a 4 letras

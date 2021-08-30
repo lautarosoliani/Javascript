@@ -84,7 +84,7 @@
 //  Encuentra unos tipos en [este sandbox](https://codesandbox.io/s/filtro-cqvzx).
 
 // Vamos a ver 4 maneras nuevas de recorrer un array que no sea con 'for'.
-// Son map, filter, for each y una mas.
+// Son map, filter, find, for each.
 // Y funciones de orden superior, a las que les podemos pasar funciones de parametro,
 // o tambien que lo que nos retorna sea una funcion.
 
@@ -115,15 +115,34 @@
 // console.log(rango(0, 10))
 // console.log(sumar(rango(1, 6)))
 
-function saludar(nombre) {
-    return `Hola, bienvenido ${nombre}`
-}
+// function saludar(nombre) {
+//     return `Hola, bienvenido ${nombre}`
+// }
+// // console.log(saludar(`Lautaro`))
+
+// function gritando(mensaje) {
+//     return `${mensaje.toUpperCase()}!`
+// }
+
 // console.log(saludar(`Lautaro`))
+// console.log(saludar(gritando(`Lautaro`)))
+// console.log(gritando(saludar(`Lautaro`)))
 
-function gritando(mensaje) {
-    return `${mensaje.toUpperCase()}!`
-}
+//////////////////////////////// .forEach /////////////////////////////////////////////////
+//////////////////////////////// SE USA PARA ACCEDER A CADA UNO DE LOS ELEMENTOS //////////
+// const array = [0, 1, 2, 3, 4]
 
-console.log(saludar(`Lautaro`))
-console.log(saludar(gritando(`Lautaro`)))
-console.log(gritando(saludar(`Lautaro`)))
+// array.forEach(function (x) {
+//     console.log(x)
+// })
+
+//////////////////////////////// .map /////////////////////////////////////////////////
+/// Itera sobre un Array y permite aplicar una transformacion sobre cada uno //////////
+
+const array = [0, 1, 2, 3, 4]
+
+const arrayAlCuadrado = array.map(function (X) {
+    return X * X
+})
+
+console.log(arrayAlCuadrado)

@@ -5,45 +5,46 @@
 
 let arrayPersonas = [
     {
+        id: 1,
         nombre: "Jhony",
         asistente: null,
         seccion: "gold",
         rol: "speaker",
-        id: 1,
     },
     {
+        id: 2,
         nombre: "Manuel",
         asistente: true,
         seccion: "vip",
         rol: "viewer",
-        id: 2,
     },
     {
+        id: 3,
         nombre: "Fran",
         asistente: true,
         seccion: "vip",
         rol: "viewer",
-        id: 3,
     },
+
     {
+        id: 4,
         nombre: "Cintia",
         seccion: "platino",
         rol: "viewer",
-        id: 4,
     },
     {
+        id: 5,
         nombre: "Marcos",
         asistente: null,
         seccion: "gold",
         rol: "viewer",
-        id: 5,
     },
     {
+        id: 6,
         nombre: "Victoria",
         asistente: true,
         seccion: "platino",
         rol: "speaker",
-        id: 6,
     },
 ]
 
@@ -119,3 +120,105 @@ let arrayPersonas = [
 // return x === `11 house`
 // })
 // console.log(arrayParaFiltrar)
+
+let listaDeTareas = [
+    {
+        id: 0,
+        titulo: `lavar los platos`,
+        completada: false,
+        fechaCrada: `08/31/2021`,
+    },
+    {
+        id: 1,
+        titulo: `lavar los platos`,
+        completada: false,
+        fechaCrada: `08/31/2021`,
+    },
+    {
+        id: 2,
+        titulo: `lavar los platos`,
+        completada: false,
+        fechaCrada: `08/31/2021`,
+    },
+    {
+        id: 3,
+        titulo: `lavar los platos`,
+        completada: false,
+        fechaCrada: `08/31/2021`,
+    },
+    {
+        id: 4,
+        titulo: `lavar los platos`,
+        completada: false,
+        fechaCrada: `08/31/2021`,
+    },
+    {
+        id: 5,
+        titulo: `lavar los platos`,
+        completada: false,
+        fechaCrada: `08/31/2021`,
+    },
+]
+
+////////////////////// TASKINATOR: mostrarInformacionTarea() /////////////////
+// function buscadorPorArrayYPorPropiedad(array, id) {
+//     return array.find(function (x) {
+//         return x.id === id
+//     })}
+// console.log(buscadorPorArrayYPorPropiedad(listaDeTareas, 5))
+
+//////////////////////////// TASKINATOR: agregarTarea() ///////////////////////
+
+// function agregarTarea(array, nuevaTarea) {
+//     let idUltimaTarea = array[array.length - 1].id
+//     nuevaTarea.id = idUltimaTarea + 1
+
+//     return array.push(nuevaTarea)
+// }
+
+let objetoNuevaTarea = {
+    id: null,
+    titulo: `NUEVA TAREA`,
+    completada: false,
+    fechaCrada: `08/31/2021`,
+}
+// let objetoNuevaTarea2 = {
+//     id: null,
+//     titulo: `NUEVA TAREA 2`,
+//     completada: false,
+//     fechaCrada: `08/31/2021`,
+// }
+// let objetoNuevaTarea3 = {
+//     id: null,
+//     titulo: `NUEVA TAREA 3`,
+//     completada: false,
+//     fechaCrada: `08/31/2021`,
+// }
+
+// agregarTarea(listaDeTareas, objetoNuevaTarea)
+// agregarTarea(listaDeTareas, objetoNuevaTarea2)
+// agregarTarea(listaDeTareas, objetoNuevaTarea3)
+
+//////////////////////////// TASKINATOR: modificarTarea() ///////////////////////
+
+function modificarTarea(array, idDeLaTareaParaModificar, objetoNuevaTarea) {
+    let ID = array.find(function (x) {
+        return x.id === idDeLaTareaParaModificar
+    }).id
+
+    objetoNuevaTarea.id = ID
+
+    return array.splice(ID, 1, objetoNuevaTarea)
+}
+
+// modificarTarea(listaDeTareas, 4, objetoNuevaTarea)
+// console.log(listaDeTareas)
+
+// modificarTarea(arrayPersonas, 5, objetoNuevaTarea)
+// console.log(arrayPersonas)
+
+let testing = listaDeTareas.indexOf(funciton(x){
+    return 
+})
+
+console.log(testing)

@@ -201,21 +201,21 @@ let objetoNuevaTarea = {
 
 //////////////////////////// TASKINATOR: modificarTarea() ///////////////////////
 
-// function modificarTarea(array, idDeObjetoParaModificar, nuevoObjeto) {
-//     //
-//     objetoTareaEncontrada = array.find(function (x) {
-//         return x.id === idDeObjetoParaModificar
-//     })
+function modificarTarea(array, idDeObjetoParaModificar, nuevoObjeto) {
+    //
+    objetoTareaEncontrada = array.find(function (x) {
+        return x.id === idDeObjetoParaModificar
+    })
 
-//     nuevoObjeto.id = idDeObjetoParaModificar
+    nuevoObjeto.id = idDeObjetoParaModificar
 
-//     let varSplice = array.indexOf(objetoTareaEncontrada)
+    let varSplice = array.indexOf(objetoTareaEncontrada)
 
-//     return array.splice(varSplice, 1, nuevoObjeto)
-// }
+    return array.splice(varSplice, 1, nuevoObjeto)
+}
 
-// modificarTarea(listaDeTareas, 2, nuevoObjeto)
-// console.log(listaDeTareas)
+modificarTarea(listaDeTareas, 4, objetoNuevaTarea)
+console.log(listaDeTareas)
 
-// modificarTarea(arrayPersonas, 4, objetoNuevaTarea)
-// console.log(arrayPersonas)
+modificarTarea(arrayPersonas, 4, objetoNuevaTarea)
+console.log(arrayPersonas)

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parcel Sandbox</title>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <h1>🔥Meeting 28🔥</h1>
+        <style>
+            body {
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+            .btn {
+                border: 2px solid orangered;
+                background-color: white;
+                color: black;
+                padding: 20px 60px;
+                border-radius: 60px;
+                cursor: pointer;
+                font-family: "JetBrains Mono", monospace;
+                font-weight: bolder;
+                font-size: 20px;
+                transition: all 0.3s ease;
+                outline: none;
+            }
+            .btn:hover {
+                background-color: orangered;
+                color: white;
+                box-shadow: 0px 0px 15px 1px #ff2525;
+            }
+        </style>
+        <button
+            onclick="manejarElClick()"
+            ondblclick="manejarElDobleClick()"
+            onmouseenter="manejarEntrarAlBoton()"
+            onmouseout="manejarSalirDelButon()"
+            class="btn"
+        >
+            CLICKEAME
+        </button>
+
+        <script>
+            function manejarElClick() {
+                console.log(`Click`)
+            }
+            //     const n1 = 2
+            //     const n2 = 30
+            //     alert("La sumatoria de estos números es " + (n1 + n2))
+            // }
+            //
+            // Mostrar un mensaje por consola cuando se haga doble click en el elemento
+            function manejarElDobleClick() {
+                console.log(`Double Click Achieved`)
+            }
+            // Mostrar un mensaje por consola cuando el mouse entre al elemento, y también, cuando salga de este.
+            function manejarEntrarAlBoton() {
+                console.log(`On Mouse Enter Achieved`)
+            }
+            function manejarSalirDelButon() {
+                console.log(`On Mouse Out Achieved`)
+            }
+        </script>
+    </body>
+</html>
+
+<!-- ¡Te proponemos un mini challenge! Partiendo del sandbox del video,
+     crea tu propio botón. Para este elemento maneja los siguientes eventos:
+
+Mostrar un mensaje por consola cuando se haga doble click en el elemento
+Mostrar un mensaje por consola cuando el mouse entre al elemento, y también, cuando salga de este.
+Tip: Para cada evento deberás de crear una función independiente. -->
+
+<!-- Extra: hoisting Aparte de las diferencias sintácticas entre las funciones
+declaradas y las arrow functions, una de las características que separa a estos
+dos tipos de funciones es que el lugar donde se definen, importa. En Javascript,
+una función declarada puede ser definida después de que se invoca, pero una
+arrow function, no. Por ejemplo, en el siguiente código la función sumar es
+definida después de su invocación: sumar(2,2) // mostraría por consola el número
+4 function sumar(x,y) { console.log(x + y) } Esto es gracias al concepto de
+hoisting. En español, la palabra “hoisting” significa “levantar”, y en
+Javascript, este concepto significa que todas las definiciones de funciones que
+estén escritas en nuestro código, se van a “levantar” a la línea 0 de nuestra
+aplicación para que estén disponibles ante cualquier invocación. Esto es una
+decisión de diseño de Javascript, y últimamente, un feature del lenguaje. Sin
+embargo, no es el caso con las arrow functions. Para estas, sí importa el lugar
+donde estén declaradas, ya que no son “hoistiadas”, o subidas a la línea 0. El
+siguiente video explora un poco más sobre esta diferencia. -->
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!-- 
+    CHALLENGE
+Realiza una aplicación que muestre la cantidad de veces que un cuadrado ha sido presionado. 
+Partiendo desde este sandbox,
+https://codesandbox.io/s/challenge-3-kjnlm?file=/index.html
+maneja los eventos onclick para cada div. Al presionar cada div, 
+se deberá mostrar un mensaje por consola que indique la cantidad de veces 
+que todos los divs han sido presionados.
+Utiliza arrow functions.
+-->
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <style>
+      .cuadrado {
+        height: 100px;
+        width: 100px;
+      }
+      .naranja {
+        background-color: orange;
+      }
+      .azul {
+        background-color: lightblue;
+      }
+      .rosa {
+        background-color: lightpink;
+      }
+      .container {
+        display: flex;
+      }
+    </style>
+    <div class="container">
+      <div onclick="orangeFunction()" class="cuadrado naranja"></div>
+      <div onclick="blueFunction()" class="cuadrado azul"></div>
+      <div onclick="pinkFunction()" class="cuadrado rosa"></div>
+    </div>
+
+    <script>
+      let orangeFunction = () => {
+        console.log(`Click on orange Square`);
+      };
+      let blueFunction = () => {
+        console.log(`Click on green Square`);
+      };
+      let pinkFunction = () => {
+        console.log(`Click on pink Square`);
+      };
+    </script>
+  </body>
+</html> 
+-->
+
+<!-- 
+    CHALLENGE
+    Partiendo de [este sandbox](https://codesandbox.io/s/disculpe-mesero-jpdo0), 
+    agrega el event handler necesario para manejar el evento cuando el cursor esté sobre el cuadrado.
+    Al pasar el cursor sobre el cuadrado, se debe mostrar por consola el mensaje 
+    **“Disculpe mesero, ¡hay una cruz en mi sopa!”** 
+    Utiliza arrow functions.
+-->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        onmouseover="moscaFunction()"
+        class="sopa"
+        height="200px"
+        src="https://www.flaticon.com/svg/static/icons/svg/3823/3823394.svg"
+        alt="sopa"
+      />
+    </div>
+    <script>
+      let moscaFunction = () => {
+        console.log(`“Disculpe mesero, ¡hay una cruz en mi sopa!”`);
+      };
+    </script>
+  </body>
+</html> -->

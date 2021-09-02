@@ -96,33 +96,40 @@
 // agrega los cambios necesarios para mostrar/ocultar el corazón al hacer click sobre el mismo.
 //  Agrega un estado que se alterne entre true y false, y vincúlalo al renderizado condicional del JSX.
 
-import React, { useState } from "react"
-import corazonFull from "./img/corazon-full.svg"
-import corazonVacio from "./img/corazon-vacio.svg"
+// import React, { useState } from "react"
+// import corazonFull from "./img/corazon-full.svg"
+// import corazonVacio from "./img/corazon-vacio.svg"
 
-export default function App() {
-    const [mostrarCorazon, setMostrarCorazon] = useState(true)
-    const handleMostrarCorazon = () => {
-        return setMostrarCorazon(!mostrarCorazon)
-    }
+// export default function App() {
+//     const [mostrarCorazon, setMostrarCorazon] = useState(true)
+//     const handleMostrarCorazon = () => {
+//         return setMostrarCorazon(!mostrarCorazon)
+//     }
 
-    return (
-        <div className="App">
-            {mostrarCorazon ? (
-                <img
-                    onClick={handleMostrarCorazon}
-                    height="30px"
-                    src={corazonFull}
-                    alt="corazon full"
-                />
-            ) : (
-                <img
-                    onClick={handleMostrarCorazon}
-                    height="30px"
-                    src={corazonVacio}
-                    alt="corazon vacio"
-                />
-            )}
-        </div>
-    )
-}
+//     return (
+//         <div className="App">
+//             {mostrarCorazon ? (
+//                 <img
+//                     onClick={handleMostrarCorazon}
+//                     height="30px"
+//                     src={corazonFull}
+//                     alt="corazon full"
+//                 />
+//             ) : (
+//                 <img
+//                     onClick={handleMostrarCorazon}
+//                     height="30px"
+//                     src={corazonVacio}
+//                     alt="corazon vacio"
+//                 />
+//             )}
+//         </div>
+//     )
+// }
+
+// let objeto1 = { prop1: null, prop2: null, prop3: null }
+// let objeto2 = { prop1: null, prop2: null, prop3: null }
+// let objeto3 = { prop1: null, prop2: null, prop3: null }
+// let objeto4 = { prop1: null, prop2: null, prop3: null }
+
+// export const ArrayDeObjetos = [objeto1, objeto2, objeto3, objeto4]

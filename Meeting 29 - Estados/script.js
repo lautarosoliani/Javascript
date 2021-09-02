@@ -127,9 +127,9 @@
 //     )
 // }
 
-let objeto1 = { prop1: null, prop2: null, prop3: null }
-let objeto2 = { prop1: null, prop2: null, prop3: null }
-let objeto3 = { prop1: null, prop2: null, prop3: null }
-let objeto4 = { prop1: null, prop2: null, prop3: null }
+// let objeto1 = { prop1: null, prop2: null, prop3: null }
+// let objeto2 = { prop1: null, prop2: null, prop3: null }
+// let objeto3 = { prop1: null, prop2: null, prop3: null }
+// let objeto4 = { prop1: null, prop2: null, prop3: null }
 
-const ArrayDeObjetos = [objeto1, objeto2, objeto3, objeto4]
+// export const ArrayDeObjetos = [objeto1, objeto2, objeto3, objeto4]

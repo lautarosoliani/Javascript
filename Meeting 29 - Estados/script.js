@@ -42,13 +42,14 @@
 //
 //
 //
-
 //      // CHALLENGE //      //
-// 📝 2. Desarrolla una aplicación que te permita mostrar una lista de personas asistentes a un evento. Crea el componente <Asistente /> el cual deberá tomar una prop representando el nombre, por ejemplo:
-
+//
+// 📝 2. Desarrolla una aplicación que te permita mostrar una lista de personas asistentes a un evento.
+// Crea el componente <Asistente /> el cual deberá tomar una prop representando el nombre, por ejemplo:
 // `<Asistente nombre=”Juan” />`
-
-// Este componente debe mostrar por pantalla el nombre del asistente junto a un checkbox, cuyo estado debe estar controlado por React. Implementa varios asistentes. Mira [este gif](https://gph.is/g/4DebBLP) para tener una idea del resultado final.
+// Este componente debe mostrar por pantalla el nombre del asistente junto a un checkbox,
+//  cuyo estado debe estar controlado por React. Implementa varios asistentes.
+//  Mira [este gif](https://gph.is/g/4DebBLP) para tener una idea del resultado final.
 
 // import React, { useState } from "react";
 
@@ -85,3 +86,43 @@
 //     </div>
 //   );
 // };
+//
+//
+//
+//
+//
+//
+// 📝 3. Partiendo del ejemplo de renderizado condicional presentado en la bitácora,
+// agrega los cambios necesarios para mostrar/ocultar el corazón al hacer click sobre el mismo.
+//  Agrega un estado que se alterne entre true y false, y vincúlalo al renderizado condicional del JSX.
+
+// import React, { useState } from "react";
+// import corazonFull from "./img/corazon-full.svg";
+// import corazonVacio from "./img/corazon-vacio.svg";
+
+// export default function App() {
+//   const [mostrarCorazon, setMostrarCorazon] = useState(true);
+//   const handleMostrarCorazon = () => {
+//     return setMostrarCorazon(!mostrarCorazon);
+//   };
+
+//   return (
+//     <div className="App">
+//       {mostrarCorazon ? (
+//         <img
+//           onClick={handleMostrarCorazon}
+//           height="30px"
+//           src={corazonFull}
+//           alt="corazon full"
+//         />
+//       ) : (
+//         <img
+//           onClick={handleMostrarCorazon}
+//           height="30px"
+//           src={corazonVacio}
+//           alt="corazon vacio"
+//         />
+//       )}
+//     </div>
+//   );
+// }

@@ -223,16 +223,16 @@ let objetoNuevaTarea = {
 
 //////////////////////////// TASKINATOR: borrarTarea() ///////////////////////
 
-function borrarTarea(array, idDeObjetoParaModificar) {
-    //
-    objetoTareaEncontrada = array.find(function (x) {
-        return x.id === idDeObjetoParaModificar
-    })
+// function borrarTarea(array, idDeObjetoParaModificar) {
+//     //
+//     objetoTareaEncontrada = array.find(function (x) {
+//         return x.id === idDeObjetoParaModificar
+//     })
 
-    let varSplice = array.indexOf(objetoTareaEncontrada)
+//     let varSplice = array.indexOf(objetoTareaEncontrada)
 
-    return array.splice(varSplice, 1)
-}
+//     return array.splice(varSplice, 1)
+// }
 
-borrarTarea(listaDeTareas, 5)
-console.log(listaDeTareas)
+// borrarTarea(listaDeTareas, 5)
+// console.log(listaDeTareas)

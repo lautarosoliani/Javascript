@@ -189,3 +189,40 @@
 //     </>
 //   );
 // }
+
+// CLASSES EXERCISES 2
+
+// import React, { useState } from "react";
+
+// import "./styles.scss";
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Contador />
+//     </div>
+//   );
+// };
+
+// function Contador(props) {
+//   const [count, setCount] = useState(0);
+
+//   const increment = () => {
+//     setCount(count + 1);
+//   };
+
+//   return (
+//     <main className="Application">
+//       <section className="Counters">
+//         <div className="Counter">
+//           <p className="count">{count}</p>
+//           <section className="controls">
+//             <button onClick={increment}>Incrementar</button>
+//           </section>
+//         </div>
+//       </section>
+//     </main>
+//   );
+// }
+
+// export default App;

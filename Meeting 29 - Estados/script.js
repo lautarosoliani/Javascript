@@ -134,27 +134,58 @@
 
 // export const ArrayDeObjetos = [objeto1, objeto2, objeto3, objeto4]
 
-// CLASSES EXERCISES
+// CLASSES EXERCISES 1
 
-import React, { useState } from "react"
+// import React, { useState } from "react"
 
-function Checkbox(props) {
-    let [isChecked, setIsChecked] = useState(false)
+// function Checkbox(props) {
+//     let [isChecked, setIsChecked] = useState(false)
 
-    const handleCheckboxChange = () => {
-        isChecked ? setIsChecked(false) : setIsChecked(true)
-    }
+//     const handleCheckboxChange = () => {
+//         isChecked ? setIsChecked(false) : setIsChecked(true)
+//     }
 
-    return (
-        <>
-            <h1>El titulo es: {props.titulo}</h1>
-            <input
-                checked={isChecked}
-                onChange={handleCheckboxChange}
-                type="checkbox"
-            />
-        </>
-    )
-}
+//     return (
+//         <>
+//             <h1>El titulo es: {props.titulo}</h1>
+//             <input
+//                 checked={isChecked}
+//                 onChange={handleCheckboxChange}
+//                 type="checkbox"
+//             />
+//         </>
+//     )
+// }
 
-export default Checkbox
+// export default Checkbox
+
+// CLASSES EXERCISES 2
+// import React, { useState } from "react";
+
+// import "./styles.css";
+
+// export default function App() {
+//   return (
+//     <div className="App">
+//       <Bulbs />
+//     </div>
+//   );
+// }
+
+// function Bulbs() {
+//   const [isOn, setIsOn] = useState(false);
+
+//   const lightOn = () => {
+//     setIsOn(true);
+//   };
+//   const lightOff = () => {
+//     setIsOn(false);
+//   };
+//   return (
+//     <>
+//       <div className={isOn ? "bulb-on" : "bulb-off"} />
+//       <button onClick={lightOn}>On</button>
+//       <button onClick={lightOff}>Off</button>
+//     </>
+//   );
+// }

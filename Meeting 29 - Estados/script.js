@@ -133,3 +133,28 @@
 // let objeto4 = { prop1: null, prop2: null, prop3: null }
 
 // export const ArrayDeObjetos = [objeto1, objeto2, objeto3, objeto4]
+
+// CLASSES EXERCISES
+
+import React, { useState } from "react"
+
+function Checkbox(props) {
+    let [isChecked, setIsChecked] = useState(false)
+
+    const handleCheckboxChange = () => {
+        isChecked ? setIsChecked(false) : setIsChecked(true)
+    }
+
+    return (
+        <>
+            <h1>El titulo es: {props.titulo}</h1>
+            <input
+                checked={isChecked}
+                onChange={handleCheckboxChange}
+                type="checkbox"
+            />
+        </>
+    )
+}
+
+export default Checkbox

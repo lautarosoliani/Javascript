@@ -190,39 +190,51 @@
 //   );
 // }
 
-// CLASSES EXERCISES 2
+// CLASSES EXERCISES 3
+// import React, { useState } from "react"
 
-// import React, { useState } from "react";
-
-// import "./styles.scss";
+// import "./styles.scss"
 
 // const App = () => {
-//   return (
-//     <div>
-//       <Contador />
-//     </div>
-//   );
-// };
-
-// function Contador(props) {
-//   const [count, setCount] = useState(0);
-
-//   const increment = () => {
-//     setCount(count + 1);
-//   };
-
-//   return (
-//     <main className="Application">
-//       <section className="Counters">
-//         <div className="Counter">
-//           <p className="count">{count}</p>
-//           <section className="controls">
-//             <button onClick={increment}>Incrementar</button>
-//           </section>
+//     return (
+//         <div>
+//             <Contador />
 //         </div>
-//       </section>
-//     </main>
-//   );
+//     )
 // }
 
-// export default App;
+// function Contador() {
+//     const [count, setCount] = useState(0)
+
+//     const sumar = () => {
+//         setCount(count + 1)
+//     }
+//     const restar = () => {
+//         return setCount(count - 1)
+//     }
+
+//     const reset = () => {
+//         return setCount(0)
+//     }
+
+//     return (
+//         <main className="Application">
+//             <section className="Counters">
+//                 <div className="Counter">
+//                     <p className="count">{count}</p>
+//                     <section className="controls">
+//                         <button onClick={sumar}>Incrementar</button>
+//                         <button onClick={restar}>Restar</button>
+//                         <button onClick={reset}>Reset to Cero</button>
+//                     </section>
+//                 </div>
+//             </section>
+//         </main>
+//     )
+// }
+
+// export default App
+
+// IMPORTANTE EL HANDLE SE USA CUANDO ES UNA SOLA COSA,
+// POR EJEMPLO UN SOLO BUTTON O UN SOLO INPUT
+// CUANDO SON MAS DE UNA COSA, POR EJEMPLO, SE USA UNA FUNCION PARA CADA BUTTON

@@ -35,7 +35,19 @@
 
 //   return (
 //     <>
-//       <input type="text" onChange={handleInput}></input>
+// <input type="text" onChange={handleInput} value={inputState}></input>
 //     </>
 //   );
 // }
+
+//
+//
+//
+//
+//
+
+// input type date:
+//
+//
+//
+//

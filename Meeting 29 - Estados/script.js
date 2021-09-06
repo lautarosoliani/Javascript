@@ -245,48 +245,48 @@
 //
 //
 
-// EXERCISE TOGGLE BUTTON
-import React, { useState } from "react"
-import "./switch.css"
+// // EXERCISE TOGGLE BUTTON
+// import React, { useState } from "react"
+// import "./switch.css"
 
-export default function App() {
-    return (
-        <div className="flex-centered">
-            <Switch />
-        </div>
-    )
-}
+// export default function App() {
+//     return (
+//         <div className="flex-centered">
+//             <Switch />
+//         </div>
+//     )
+// }
 
-function Switch() {
-    const [buttonState, setState] = useState(false)
+// function Switch() {
+//     const [buttonState, setState] = useState(false)
 
-    const handleState = () => {
-        setState(!buttonState)
-        console.log(buttonState)
-    }
-    // Las clases que deberas agregar condicionalmente al span son:
-    // toggle-btn-on para marcar el switch y
-    // toggle-btn-off para desmarcar el switch.
-    // Nota: la clase toggle-btn siempre debe estar presente
-    return (
-        <div>
-            <label>
-                <input
-                    className="toggle-input"
-                    type="checkbox"
-                    onChange={handleState}
-                    checked={buttonState}
-                />
-                {/* nota: la clase toggle-btn SIEMPRE tiene que estar presente */}
-                {/* <span className={"toggle-btn toggle-btn-off"} /> */}
-                <span
-                    className={
-                        buttonState
-                            ? "toggle-btn toggle-btn-on"
-                            : "toggle-btn toggle-btn-off"
-                    }
-                />
-            </label>
-        </div>
-    )
-}
+//     const handleState = () => {
+//         setState(!buttonState)
+//         console.log(buttonState)
+//     }
+//     // Las clases que deberas agregar condicionalmente al span son:
+//     // toggle-btn-on para marcar el switch y
+//     // toggle-btn-off para desmarcar el switch.
+//     // Nota: la clase toggle-btn siempre debe estar presente
+//     return (
+//         <div>
+//             <label>
+//                 <input
+//                     className="toggle-input"
+//                     type="checkbox"
+//                     onChange={handleState}
+//                     checked={buttonState}
+//                 />
+//                 {/* nota: la clase toggle-btn SIEMPRE tiene que estar presente */}
+//                 {/* <span className={"toggle-btn toggle-btn-off"} /> */}
+//                 <span
+//                     className={
+//                         buttonState
+//                             ? "toggle-btn toggle-btn-on"
+//                             : "toggle-btn toggle-btn-off"
+//                     }
+//                 />
+//             </label>
+//         </div>
+//     )
+// }
